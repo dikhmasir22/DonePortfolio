@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Dava</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+
+        /* Keyframe - nyoba2 aja kak :v */
+        @keyframes transitionIn {
+            from {
+                opacity: 0;
+                transform: rotateX(-15deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotateX(0);
+            }
+        }
+
+        @keyframes transisi {
+            from {
+                opacity: 0;
+                transform: rotateX(-10deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotateX(0);
+            }
+        }
+
+
+        body {
+            min-height: 200vh;
+            animation: transitionIn 2s;
+        }
+
+
+        /* Section jumbotron */
+        .jumbotron {
+            padding-top: 2rem;
+            background-color: #172830;
+        }
+
+        .jumbotron>img {
+            width: 200px;
+        }
+
+        .jumbotron a>button {
+            color: white;
+            border: 1px solid white;
+            width: 120px;
+            height: 55px;
+            background-color: transparent;
+            font-size: 12px;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+
+        /* End Section Jumbotron */
+
+        /* Section About */
+        .container .row h2 {
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 2rem 0;
+        }
+
+        #gambar_projek .col-3>img {
+            width: 400px;
+        }
+
+        #about .container .row .col-4 ul li,
+        #about .container .row .col-3 ul li {
+            list-style: none;
+            margin: 5px 0 0 15px;
+        }
+
+        #kemampuan {
+            max-height: 148vh;
+        }
+        /* END ABOUT SECTION */
+
+        #contact a {
+            margin: 2rem 0;
+        }
+
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            border-radius: 20px;
+            bottom: 20px;
+            right: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #judul_projekla .col-6 {
+            background-color: gray;
+        }
+
+        #caroselimeg {
+
+            padding: 0 0 5rem 0;
+
+        }
+
+        #carouselExampleInterval .carousel-inner .carousel-item>img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .Riwayat_Pend {
+            position: absolute;
+            top: 189%;
+            left: 19%;
+            animation: transisi 1.5s;
+            display: none;
+        }
+
+        .Riwayat_Pend.buka {
+            display: block;
+        }
+
+        .Pengalaman_Ker {
+            position: absolute;
+            top: 189%;
+            left: 20%;
+            right: 20%;
+            animation: transisi 1.5s;
+            display: none;
+        }
+
+        .Pengalaman_Ker.buka {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section Riwayat Pendidikan -->
+    <section id="Riwayat_Pendidikan" class="Riwayat_Pend">
+        <div style="border: 3px solid black;" class="container-fluid  bg-dark text-light p-5 rounded">
+            <div class="row text-start">
+                <ul class="">
+                    <li class="list-group-item">
+                        <label class="fw-bold">Sekolah Dasar (SD)</label>
+                        <p class="text-warning">SDN 1 Tanjung Raya</p>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="fw-bold" for="secondRadio">Sekolah Menengah Pertama (SMP)</label>
+                        <p class="text-warning">SMP N 5 Pesawaran</p>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="fw-bold" for="thirdRadio">Sekolah Menengah Kejuruan (SMK)</label>
+                        <p class="text-warning">SMK Widya Yahya Gading Rejo</p>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="fw-bold" for="thirdRadio">Sarjana 1 (On-going)</label>
+                        <p class="text-warning">Universitas Aisyah Pringsewu</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Section Riwayat Pendidikan -->
+
+    <!-- Section Pengalaman Kerja -->
+    <section id="Pengalaman_Kerja" class="Pengalaman_Ker">
+        <div style="border: 3px solid black;" class="container-fluid  bg-dark text-light p-5 rounded">
+            <div class="row text-start">
+                <ul class="">
+                    <li class="list-group-item">
+                        <label class="fw-bold">-JULY 2019- <br><strong>SMK WIDYA YAHYA</strong> <br> Teknisi
+                            Komputer</label>
+                        <p class="text-warning">Pernah Menjadi Teknisi Komputer di SMK Widya Yahya Gading Rejo untuk
+                            membantu pelaksanaan UNBK.</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <label class="fw-bold">NOVEMBER 2019 - JANUARY 2020 <br><strong>ASA COM PRINGSEWU</strong> <br>
+                            Teknisi Magang</label>
+                        <p class="text-warning">Pernah menjadi Teknisi Komputer Magang di ASA COM Pringsewu selama 3
+                            Bulan.</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <label class="fw-bold">DECEMBER 2021 <br><strong>Ponpes Darul Huffaz Lampung</strong> <br>
+                            Teknisi Komputer</label>
+                        <p class="text-warning">Pernah menjadi Teknisi Komputer di Pondok Pesantren Darul Huffaz
+                            Lampung, merakit dari nol 30 PC yang akan digunakan untuk pelaksanaan UNBK.</p>
+                    </li>
+                    <br>
+                    <li class="list-group-item">
+                        <label class="fw-bold">DECEMBER 2021 - NOW <br><strong>Dimana Saja</strong> <br> Teknisi
+                            Komputer Freelancer</label>
+                        <p class="text-warning">Menerima Servis Komputer (Perbaikan, Penginstalan, dll). Sejauh ini
+                            sudah banyak pelanggan yang sudah terlayani. Rata-rata untuk melakukan Penginstalan ulang
+                            Windows dan software lainnya.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Ini Bagian NavBar Awal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand bg-light bg-opacity-10 p-2 ps-3 pe-3 rounded shadow" href="#">Dava</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projek">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ini Bagian Navbar Akhir -->
+
+
+    <!-- Mulai JumboTron -->
+    <section class="jumbotron text-center text-light">
+        <img class="rounded-circle img-thumbnail shadow" src="images/Profile.jpg" alt="">
+        <h1 class="display-4">Dava Ikhsan Almasir</h1>
+        <p class="lead">Junior Web Developer</p>
+        <a href="#about"><button>Tentang Saya</button></a>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#e6fafd" fill-opacity="1"
+                d="M0,64L48,69.3C96,75,192,85,288,122.7C384,160,480,224,576,218.7C672,213,768,139,864,144C960,149,1056,235,1152,245.3C1248,256,1344,192,1392,160L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir JumboTron -->
+
+
+    <!-- Bagian About -->
+    <section id="about">
+        <div class="container-fluid bg-info bg-opacity-10">
+            <div class="row text-center">
+                <h1 style="margin-top: 2rem;">Tentang Diriku</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p style="font-size: 24px; margin-top: 1rem;">Perkenalkan, Namaku Dava Ikhsan Almasir. Sekarang ini
+                        aku adalah seorang Mahasiswa dari
+                        Universitas Aisyah Pringsewu, Lampung. Aku mengambil Jurusan S1 Pendidikan Teknologi dan
+                        Informasi pada Fakultas Keguruan & Ilmu Pendidikan</p>
+                </div>
+            </div>
+            <div style="margin-top: 2rem;" class="row justify-content-center">
+                <div class="col-4">
+                    <ul>
+                        <li><b>Tanggal lahir : </b>02 Februari 2003</li>
+                        <li><b>No. Hanphone : </b>085783905035</li>
+                        <li><b>Kota : </b>Lampung, Indonesia</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li><b>Usia : </b>21 Tahun</li>
+                        <li><b>Gelar : </b>None</li>
+                        <li><b>Email : </b>tniwina@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-3">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="Riwayat_Pendidikan()">Riwayat
+                        Pendidikan</button>
+                </div>
+                <div class="col-3">
+                    <a target="_blank" href="https://www.codepolitan.com/c/3EFJ7FQ/"><button style="margin-left: 6rem;" type="button" class="btn btn-primary btn-lg">Pencapaian</button></a>
+                </div>
+                <div class="col-3">
+                    <button style="margin-left: 7rem;" type="button" class="btn btn-primary btn-lg" onclick="Pengalaman_Kerja()">Pengalaman</button>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-around pb-5">
+                <div class="col-5 bg-dark-subtle p-5 rounded m-5">
+                    <h3 class="fw-bold">Halo Semua!</h3>
+                    <p class="fs-5">Sedikit aku akan menceritakan pengalamanku saat masih duduk dibangku SMA. Saat
+                        itu adalah momen dimana aku merasakan bahwa diriku dapat berguna.</p>
+                    <p class="fs-5">Aku bersekolah di SMK Widya Yahya gading rejo, kabupaten Pringsewu. Diriku mengambil
+                        jurusan Teknik Komputer dan Jaringan atau biasa disebut TKJ. Saat masih duduk dibangku kelas 10,
+                        kala itu akan diadakan Ujian Nasional untuk Kelas 12. Hebatnya hanya aku dan temanku yang
+                        dipercayakan untuk menjadi Teknisi pada ujian tersebut, kami melakukan instal ulang windows pada
+                        semua pc yang ada, jumlahnya terdapat 50 pc. Setelah itu kami melakukan setting jaringan dan
+                        instalasi software exambrowser pada semua Pc yang ada. Singkat cerita, 3 hari pun berlalu, ujian
+                        berjalan lancar, dari sini aku merasa bahwa kemampuanku dalam memahami komputer tidaklah sia-sia
+                        dan aku bersyukur dapat melanjutkan pendidikan dibidang komputer juga pada perkuliahan.</p>
+                </div>
+                <div id="kemampuan" class="col-5 mt-5 bg-dark-subtle p-5 rounded">
+                    <h3>kemampuanku!</h3>
+                    <ul class="skill-bar">
+                        <li class="mt-2">
+                            <strong>Instalasi Komputer</strong>
+                            <div class="progress mt-1" role="progressbar" aria-label="Warning example"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-success text-dark fw-bold" style="width: 90%">90%</div>
+                            </div>
+                        </li>
+                        <li class="mt-2">
+                            <strong>HTML</strong>
+                            <div class="progress mt-1" role="progressbar" aria-label="Warning example"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-info text-dark fw-bold" style="width: 60%">60%</div>
+                            </div>
+                        </li>
+                        <li class="mt-2">
+                            <strong>CSS</strong>
+                            <div class="progress mt-1" role="progressbar" aria-label="Warning example"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-warning text-dark fw-bold" style="width: 50%">50%</div>
+                            </div>
+                        </li>
+                        <li class="mt-2">
+                            <strong>Javascript</strong>
+                            <div class="progress mt-1" role="progressbar" aria-label="Warning example"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger text-dark fw-bold" style="width: 10%">10%</div>
+                            </div>
+                        </li>
+                        <li class="mt-2">
+                            <strong>Photoshop</strong>
+                            <div class="progress mt-1" role="progressbar" aria-label="Warning example"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-warning text-dark fw-bold" style="width: 40%">40%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+
+    <!-- Section Projek -->
+    <section id="Projek">
+        <div style="background-color: #273036;" class="container-fluid text-light">
+            <div style="margin-bottom: 4rem;" class="row text-center justify-content-center p-5">
+                <div class="col-2 p-3 bg-info bg-opacity-10 border border-info border rounded">
+                    <h2>Projek Saya</h2>
+                </div>
+            </div>
+
+            <!-- Bagian Card dalam Projek -->
+            <div style="margin-bottom: 4rem; padding-bottom: 4rem;" id="gambar_projek"
+                class="row justify-content-evenly">
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="https://cvdikhmasir.000webhostapp.com/images/portfolio/gallery/foto_rinrinport.jpg"
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Ai-Rinrin</h5>
+                            <p class="card-text">Sebuah Chatbot Whatsapp yang dibuat menggunakan nodejs dengan API ChatGPT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="http://cvdikhmasir.000webhostapp.com/images/portfolio/gallery/gambarkaluap.jpg"
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Kalender UAP</h5>
+                            <p class="card-text">Kalender Universitas Aisyah Pringsewu yang dibuat menggunakan Aplikasi Corel Draw</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="http://cvdikhmasir.000webhostapp.com/images/portfolio/gallery/staruml2000.jpg"
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Usecase Diagram</h5>
+                            <p class="card-text">Sebuah Usecase Diagram dari Perancangan Sistem Peminjaman Lab dibuat menggunakan Star UML</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bagian Card dalam Projek -->
+
+            <!-- Carousel Image -->
+            <div id="judul_projekla" class="row justify-content-center text-center">
+                <div class="col-6 p-3 bg-info bg-opacity-10 border border-4 border-info border-bottom-0 rounded">
+                    <h2>Projek Lainnya</h2>
+                </div>
+            </div>
+            <div id="caroselimeg" class="row justify-content-center text-center shadow">
+                <div class="col-7">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner border border-info border border-5 rounded">
+                            <div class="carousel-item active" data-bs-interval="1500">
+                                <img src="https://cvdikhmasir.000webhostapp.com/images/portfolio/gallery/potosop2000.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                                <img src="https://cvdikhmasir.000webhostapp.com/images/portfolio/gallery/bajuout2000.jpg"
+                                    class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                                <img src="https://cvdikhmasir.000webhostapp.com/images/portfolio/gallery/ssminiport.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev text-dark" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next text-dark" type="button"
+                            data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Image -->
+        </div>
+    </section>
+    <!-- End Section Projek -->
+
+
+    <!-- Section Kontak -->
+    <section id="Kontak">
+        <div class="container-fluid bg-info bg-opacity-10">
+            <div class="row pt-5 text-center">
+                <h2>Kontak</h2>
+            </div>
+            <div style="margin-bottom: 4rem; padding-bottom: 4rem;" id="gambar_projek"
+                class="row justify-content-evenly mt-4">
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="images/facebook.PNG"
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <br>
+                            <h5 class="card-title">Facebook</h5>
+                            <a href="#" class="btn btn-primary">Follow</a>
+                            <br><br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="images/Instagram.PNG"
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Instagram</h5>
+                            <a href="#" class="btn btn-primary">Follow</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="images/github.PNG"
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Github</h5>
+                            <a href="#" class="btn btn-primary">Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Kontak -->
+
+
+    <!-- Section Footer -->
+    <section id="footer">
+        <div class="container-fluid bg-dark text-light shadow">
+            <div class="row text-center">
+                <h6 style="padding: 2rem 0;">Copyright&copy; - Dava Ikhsan Almasir</h6>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Section Footer -->
+
+
+    <!-- Button Scroll to Top :v -->
+    <button class="bg-dark bg-opacity-40 text-light fs-7" id="scrollToTopBtn">&#8593; Top</button>
+    <!-- Scroll To top -->
+
+
+
+    <!-- Javascript Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- End Javascript Boostrap -->
+
+    <!-- Internal Javascript -->
+    <script>
+        // Riwayat Pendidikan
+        let Riwayat_Pend = document.getElementById("Riwayat_Pendidikan");
+
+        function Riwayat_Pendidikan() {
+            Riwayat_Pend.classList.toggle("buka");
+        }
+        // End Riwayat Pendidikan
+
+        // Pengalaman
+        let Pengalaman_Ker = document.getElementById("Pengalaman_Kerja");
+
+        function Pengalaman_Kerja() {
+            Pengalaman_Ker.classList.toggle("buka");
+        }
+
+        // Ni ditambahin Scroll to top biar enak keatasnya aja kak, gpp ya Kak :)
+
+        // Fungsi Scroll To top, Generate dari cgpt kak, belum bisa js soalnya :v
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            // Tampilkan atau sembunyikan tombol berdasarkan posisi scroll
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            });
+
+            // Fungsi untuk melakukan scroll ke atas
+            scrollToTopBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0; // Untuk Safari
+                document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+            });
+        });
+    </script>
+    <!-- End Internal Javascript -->
+</body>
+
+</html>
